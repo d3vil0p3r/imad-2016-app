@@ -9,31 +9,26 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/css/style.css', function (req, res) {
+app.get('/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'style.css'));
 });
 
 
-app.get('/ui/css/normalize.css', function (req, res) {
+app.get('/css/normalize.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'style.css'));
 });
 
 
-app.get('/ui/js/feeder.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/js', 'style.css'));
+app.get('/js/feeder.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'feeder.js'));
 });
 
-app.get('/ui/js/script.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/js', 'style.css'));
+app.get('/js/script.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'script.js'));
 });
 
-app.get('/ui/js/tip.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/js', 'style.css'));
-});
-
-
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/js/tip.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'tip.js'));
 });
 
 
